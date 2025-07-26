@@ -1,0 +1,42 @@
+{
+    "user_profile": {
+        "id": "string",
+        "name": "string",
+        "age": "number",
+        "languages": [],
+        "village": "string",
+        "state": "string",
+        "crops": [],
+        "farms": []
+    },
+    "bandhu_farm_mapping": {
+        "bandhu_id": "string",
+        "farm_id": "string",
+        "farmer_id": "string"
+    },
+    "bandhu_bot": {
+        "id": "string",
+        "hardware_id": "string",
+        "timestamp": "string",
+        "rainfall": "string",
+        "moisture": "string",
+        "sunlight_intensity": "string",
+        "smoke_intensity": "string"
+    },
+    "web_sourced_data": {
+        "id": "string",
+        "context": "string",
+        "timestamp": "string",
+        "tags": "string",
+        "geography": "string",
+        "title": " string"
+    },
+    "alerts": {
+        "id": "string",
+        "farmer_id": "string",
+        "critilality": "1 | 2 | 3 ",
+        "context": "string",
+        "status": "open | seen | read | archived",
+        "timestamp": "string"
+    }
+}
