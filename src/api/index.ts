@@ -1,23 +1,8 @@
-import authenticateToken from '@/shared/middlewares/authentication';
 import { Router } from 'express';
-import adminRouter from './admin/admin.router';
-import authRouter from './auth/auth.router';
-import dataRouter from './data/data.router';
-import userRouter from './users/user.router';
+import routes from './router';
 
 export default (): Router => {
   const app = Router();
-
-  app.use('/auth', authRouter());
-  app.use(
-    '/admin',
-    authenticateToken({
-      verifyAdmin: true,
-    }),
-    adminRouter(),
-  );
-  app.use('/users', userRouter());
-  app.use('/data', dataRouter());
-
+  app.use('/api', routes());
   return app;
 };
